@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<button type="button" class="btn btn-primary" style="display:none" data-url="/Mensaje/Enviado" onclick="mostrarFormulario(this)" id="miBoton">Abrir modal</button>
+
+@section Scripts {
+    <script>
+
+        var button = document.getElementById('miBoton');
+        button.click();
+    </script>
+}
